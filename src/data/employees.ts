@@ -50,4 +50,4 @@ const team = [
       role: "Hard Man",
     },
   ];
-  export default team;
+export default team;
