@@ -20,12 +20,16 @@ export const Employee = ({ name, role }: EmployeeProps) => {
 
   return (
     <div className="border-green-500 border-2 w-64 mb-8 text-center">
-      <p>Employee Name: {name}</p>
+      <p>Name: {name}</p>
       <p>Role: {role}</p>
-      <p>Counter: {counter}</p>
-      <button onClick={incrementCounter}>+</button>
-      <br></br>
-      <button onClick={decrementCounter}>-</button>
+      <div className="border-green-500 border-2 p-2 w-32 m-auto mb-8 mt-4 text-center">
+        <p>Counter: </p>
+        <p>{counter}</p>
+        <button className="mr-6" onClick={decrementCounter}>
+          -
+        </button>
+        <button onClick={incrementCounter}> + </button>
+      </div>
     </div>
   );
 };
